@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="false"
+    tools:context="com.webmyne.geleza_learnerportal.MyResources.FragmentMyArchieves">
+
+    <LinearLayout
+        android:background="@color/background_color"
+        android:id="@+id/linearSideMyArchieves"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/linearSideMyArchieves"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_margin="48dp"
+            android:contentDescription="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/myarchievs"
+            android:scaleType="centerInside" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

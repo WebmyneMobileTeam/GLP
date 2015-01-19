@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context="com.webmyne.geleza_learnerportal.Home.ProfileViewFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgProfileViewPic"
+            android:layout_weight="3"
+            android:contentDescription="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nobantu_sithole"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:text="Nobantu Sithole"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Future Leader"
+                android:drawableRight="@drawable/ic_learner_status_badge"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:textColor="#0070C0"
+                android:textSize="@dimen/normal_text" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
