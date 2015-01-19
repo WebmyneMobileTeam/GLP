@@ -5,12 +5,48 @@
     android:clickable="false"
     tools:context="com.webmyne.geleza_learnerportal.MyResources.FragmentHigherLearningHub">
 
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
     <ImageView
-       android:layout_margin="48dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/higher_learninghub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a1"
         android:scaleType="centerInside" />
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a2"
+        android:scaleType="centerInside" />
+        <ImageView
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a3"
+            android:scaleType="centerInside" />
+        <ImageView
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a4"
+            android:scaleType="centerInside" />
+        </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a5"
+        android:scaleType="centerInside" />
+    <ImageView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a6"
+        android:scaleType="centerInside" />
+</LinearLayout>
 </FrameLayout>

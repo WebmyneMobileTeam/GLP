@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import com.webmyne.geleza_learnerportal.CustomViews.CustomTabView;
 import com.webmyne.geleza_learnerportal.R;
@@ -24,6 +25,9 @@ public class FragmentMyArchieves extends Fragment {
 
     private String mParam1;
     private String mParam2;
+
+    int flag;
+    ImageView myarch1;
     private LinearLayout linearSideStudyMaterial;
 
     public  String[] subject_names = {"Chemistry","Economics","Languages",
@@ -63,6 +67,22 @@ public class FragmentMyArchieves extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_fragment_my_archieves, container, false);
         linearSideStudyMaterial = (LinearLayout)v.findViewById(R.id.linearSideMyArchieves);
+        myarch1 = (ImageView)v.findViewById(R.id.myarch1);
+
+        flag=0;
+        myarch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(flag==0){
+                    myarch1.setImageResource(R.drawable.t3);
+                    flag=1;
+                }
+                else{
+                    myarch1.setImageResource(R.drawable.myarchievs);
+                    flag=0;
+                }
+            }
+        });
 
     return v;
     }

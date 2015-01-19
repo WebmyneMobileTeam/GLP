@@ -22,6 +22,8 @@ public class StudymaterialFragment extends Fragment {
     private LinearLayout linearMainStudyMaterial;
     private ImageView imgMainStudy;
 
+    int flag;
+
     public  String[] subject_names = {"Chemistry","Economics","Languages",
             "Physics","Biology"};
 
@@ -80,7 +82,7 @@ public class StudymaterialFragment extends Fragment {
             tabView.setImage(subject_icons[i]);
             tabView.setName(subject_names[i]);
             tabView.clearBadge();
-            tabView.resizeImage(120,120);
+            tabView.resizeImage(100,100);
 
             if(i == 2){
                 tabView.displayBadge(2);
@@ -116,7 +118,22 @@ public class StudymaterialFragment extends Fragment {
             selectSubject(index);
             //
             imgMainStudy.setImageResource(R.drawable.study_material);
+            flag=0;
 
+            imgMainStudy.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(flag==0) {
+                        imgMainStudy.setImageResource(R.drawable.study_material_opened);
+                        flag=1;
+                    }
+                    else{
+                        imgMainStudy.setImageResource(R.drawable.study_material);
+                        flag=0;
+                    }
+
+                }
+            });
 
         }
     };

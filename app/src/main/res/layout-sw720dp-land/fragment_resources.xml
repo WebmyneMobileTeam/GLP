@@ -96,11 +96,11 @@
                 android:contentDescription="@string/app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_my_archives"
+                android:src="@drawable/carrere"
                 android:scaleType="centerInside" />
 
             <TextView
-                android:text="My Archives"
+                android:text="Carrers \nCenter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
@@ -167,16 +167,10 @@
                 android:contentDescription="@string/app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_my_honours"
+                android:src="@drawable/geleza_logo"
                 android:scaleType="centerInside" />
 
-            <TextView
-                android:visibility="invisible"
-                android:text="My Archives"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:textSize="22sp" />
+
 
         </LinearLayout>
 
