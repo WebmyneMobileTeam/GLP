@@ -20,6 +20,7 @@ public class FragmentHigherLearningHub extends Fragment {
     private String mParam1;
     private String mParam2;
     ImageView btn1,btn2,btn3,mainView;
+    int flag;
 
     public static FragmentHigherLearningHub newInstance(String param1, String param2) {
         FragmentHigherLearningHub fragment = new FragmentHigherLearningHub();
@@ -53,11 +54,19 @@ public class FragmentHigherLearningHub extends Fragment {
         btn3 = (ImageView)convertView.findViewById(R.id.btn3);
         mainView = (ImageView)convertView.findViewById(R.id.main);
 
+        flag=0;
         mainView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               if(flag==0){
                 mainView.setImageResource(R.drawable.a8);
+                   flag=1;
             }
+                else{
+                   mainView.setImageResource(R.drawable.a6);
+                   flag=0;         }
+
+               }
         });
 
         btn1.setOnClickListener(new View.OnClickListener() {
